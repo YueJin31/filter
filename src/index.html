@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Filter Project</title>
+  </head>
+  <body>
+    <div class="main-content mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <div id="filters">
+              <div class="filter-color filter-item mb-5">
+                <h3>Select Color</h3>
+                <select class="form-select" id="select-color">
+                  <option value="">Color</option>
+                  <option value="white">White</option>
+                  <option value="black">Black</option>
+                  <option value="grey">Grey</option>
+                  <option value="red">Red</option>
+                  <option value="green">Green</option>
+                </select>
+              </div>
+
+              <div class="filter-size filter-item mb-5">
+                <h3>Select Your Size</h3>
+                <div class="select-size">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="XS" id="xs" />
+                    <label class="form-check-label" for="xs"> XS </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="S" id="s" />
+                    <label class="form-check-label" for="s"> S </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="M" id="m" />
+                    <label class="form-check-label" for="m"> M </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="L" id="l" />
+                    <label class="form-check-label" for="l"> L </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="XL" id="xl" />
+                    <label class="form-check-label" for="xl"> XL </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="filter-price filter-item">
+                <h3>Price</h3>
+                <input type="range" class="form-range" min="0" max="100" value="0" id="customRange" />
+                <span id="output-range">0 UAH</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-9">
+            <div id="products" class="row">
+              <div class="col-lg-3">
+                <div class="card">
+                  <img src="./img/cart.png" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and make up the bulk of the card's content.
+                    </p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
